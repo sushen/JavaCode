@@ -17,17 +17,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         configureNextButton();
+        configureGoToPrintLine();
 
     }
 
-    public void submitOrder(View view) {
-        display("Hello World");
-    }
 
-    private void display(String text) {
-        TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
-        quantityTextView.setText("" + text);
-    }
+    // This is for Go to Hello World
     private void configureNextButton(){
         Button nextButton = (Button) findViewById(R.id.goToHelloWorld);
         nextButton.setOnClickListener( new View.OnClickListener() {
@@ -40,6 +35,24 @@ public class MainActivity extends AppCompatActivity {
 
             // Lonch The Hello World Activety
                 Intent intent = new Intent(MainActivity.this,HelloWorld.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    // This is for Go to Print Line
+    private void configureGoToPrintLine(){
+        Button nextButton = (Button) findViewById(R.id.goToPrintLine);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"Cheers! Cheers ! It a good day",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Hello World Activety
+                Intent intent = new Intent(MainActivity.this,PrintLine.class);
                 startActivity(intent);
             }
         });
