@@ -9,30 +9,35 @@
 
     <Button
         android:id="@+id/goToHelloWorld"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="632dp"
+        android:layout_marginTop="51dp"
         android:onClick="configureNextButton"
-        android:text="Go To Hello World"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Hello World"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/goToPrintLine"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="576dp"
+        android:layout_marginTop="8dp"
         android:onClick="configureGoToPrintLine"
-        android:text="Go To Print Line"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Print Line"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goToHelloWorld" />
 
-
-
+    <Button
+        android:id="@+id/goToVariables"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="configureGoToVariables"
+        android:text="Variables"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goToPrintLine" />
 
 
 </android.support.constraint.ConstraintLayout>

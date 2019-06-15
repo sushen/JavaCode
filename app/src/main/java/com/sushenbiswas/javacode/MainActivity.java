@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         configureNextButton();
         configureGoToPrintLine();
+        configureGoToVariables();
 
     }
 
@@ -48,11 +49,29 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.i("MyApps","I am happy");
-                Toast.makeText(getApplicationContext(),"Cheers! Cheers ! It a good day",Toast.LENGTH_SHORT)
+                Toast.makeText(getApplicationContext(),"I am in Print Line",Toast.LENGTH_SHORT)
                         .show();
 
-                // Lonch The Hello World Activety
+                // Lonch The Print Line Activety
                 Intent intent = new Intent(MainActivity.this,PrintLine.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    // This is for Go to Variable
+    private void configureGoToVariables(){
+        Button nextButton = (Button) findViewById(R.id.goToVariables);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Variable",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Print Line Activety
+                Intent intent = new Intent(MainActivity.this,ActivityVariables.class);
                 startActivity(intent);
             }
         });

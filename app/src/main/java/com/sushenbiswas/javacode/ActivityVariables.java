@@ -7,18 +7,19 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class PrintLine extends AppCompatActivity {
+public class ActivityVariables extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_print_line);
+        setContentView(R.layout.activity_variables);
+
         goToMain();
     }
 
-    // this is for Display Print Line
+    // this is for Display Variables
     public void submitOrder(View view) {
-        display("System.out.println();");
+        display("int bus;");
 
     }
 
