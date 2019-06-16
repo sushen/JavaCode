@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         configureGoToPrintLine();
         configureGoToVariables();
         configureGoToInteger();
+        configureGoToBoolean();
 
     }
 
@@ -89,6 +90,23 @@ public class MainActivity extends AppCompatActivity {
 
                 // Lonch The Print Line Activety
                 Intent intent = new Intent(MainActivity.this,exampleInteger.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to Boolean
+    private void configureGoToBoolean(){
+        Button nextButton = (Button) findViewById(R.id.goToBoolean);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Variable",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Print Line Activety
+                Intent intent = new Intent(MainActivity.this,CodeBoolean.class);
                 startActivity(intent);
             }
         });

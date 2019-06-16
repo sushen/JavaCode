@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".exampleInteger">
+    tools:context=".CodeBoolean">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Integer Code Example"
+            android:text="Boolean Example"
             android:textAllCaps="true"
             android:textSize="34sp"
             android:textAlignment="center"/>

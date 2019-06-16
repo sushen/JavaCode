@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".exampleInteger"></activity>
+        <activity android:name=".CodeBoolean"></activity>
+        <activity android:name=".exampleInteger" />
         <activity android:name=".ActivityVariables" />
         <activity android:name=".PrintLine" />
         <activity android:name=".HelloWorld" />
