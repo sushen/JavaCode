@@ -18,8 +18,38 @@ public class ActivityVariables extends AppCompatActivity {
     }
 
     // this is for Display Variables
+
+
     public void submitOrder(View view) {
-        display("int bus;");
+        display( "        // Data tipe\n" +
+                "        int busStation = 0;\n" +
+                "        char me = 'I';\n" +
+                "        boolean fact = true;\n" +
+                "        String text = \"Any Text\";\n" +
+                "        double price = 12.36;\n" +
+                "        long total = 1001111111;") ;
+
+        // Code for Log
+        int bus;
+        bus = 0;
+        bus = bus+5;
+        bus = bus-2;
+        System.out.println(bus);
+
+        // Data tipe
+        int busStation = 0;
+        char me = 'I';
+        boolean fact = true;
+        String text = "Any Text";
+        double price = 12.36;
+        long total = 1001111111;
+
+        // print all Data Type in the log
+        System.out.println(me);
+        System.out.println(fact);
+        System.out.println(text);
+        System.out.println(price);
+        System.out.println(total);
 
     }
 

@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         configureNextButton();
         configureGoToPrintLine();
         configureGoToVariables();
+        configureGoToInteger();
 
     }
 
@@ -72,6 +72,23 @@ public class MainActivity extends AppCompatActivity {
 
                 // Lonch The Print Line Activety
                 Intent intent = new Intent(MainActivity.this,ActivityVariables.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to Integer
+    private void configureGoToInteger(){
+        Button nextButton = (Button) findViewById(R.id.goToInteget);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Variable",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Print Line Activety
+                Intent intent = new Intent(MainActivity.this,exampleInteger.class);
                 startActivity(intent);
             }
         });
