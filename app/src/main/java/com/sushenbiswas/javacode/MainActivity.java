@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         configureGoToIfElse();
         configureBooleanExpression();
         configureLogicalOperator();
+        configureNestedIfStatements();
 
     }
 
@@ -161,6 +162,23 @@ public class MainActivity extends AppCompatActivity {
 
                 // Lonch The Print Line Activety
                 Intent intent = new Intent(MainActivity.this,LogicalOperator.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to Nasted If Statements
+    private void configureNestedIfStatements(){
+        Button nextButton = (Button) findViewById(R.id.goToNestedIfStatements);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Nasted If Statements",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Print Line Activety
+                Intent intent = new Intent(MainActivity.this,NastedIf.class);
                 startActivity(intent);
             }
         });
