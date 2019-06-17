@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BooleanExpression"></activity>
+        <activity android:name=".LogicalOperator"></activity>
+        <activity android:name=".BooleanExpression" />
         <activity android:name=".CodeIfEalse" />
         <activity android:name=".CodeBoolean" />
         <activity android:name=".exampleInteger" />

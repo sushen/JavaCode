@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         configureGoToBoolean();
         configureGoToIfElse();
         configureBooleanExpression();
+        configureLogicalOperator();
 
     }
 
@@ -138,11 +139,28 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.i("MyApps","I am happy");
-                Toast.makeText(getApplicationContext(),"I am in IfElse",Toast.LENGTH_SHORT)
+                Toast.makeText(getApplicationContext(),"I am in oolean Expression",Toast.LENGTH_SHORT)
                         .show();
 
                 // Lonch The Print Line Activety
                 Intent intent = new Intent(MainActivity.this,BooleanExpression.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to Logical Operator
+    private void configureLogicalOperator(){
+        Button nextButton = (Button) findViewById(R.id.goToLogicalOperator);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Logical Operator",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Print Line Activety
+                Intent intent = new Intent(MainActivity.this,LogicalOperator.class);
                 startActivity(intent);
             }
         });
