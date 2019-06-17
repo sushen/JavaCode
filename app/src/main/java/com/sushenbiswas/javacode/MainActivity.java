@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         configureGoToVariables();
         configureGoToInteger();
         configureGoToBoolean();
+        configureGoToIfElse();
+        configureBooleanExpression();
 
     }
 
@@ -107,6 +109,40 @@ public class MainActivity extends AppCompatActivity {
 
                 // Lonch The Print Line Activety
                 Intent intent = new Intent(MainActivity.this,CodeBoolean.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to IfElse
+    private void configureGoToIfElse(){
+        Button nextButton = (Button) findViewById(R.id.goToIfElse);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in IfElse",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Print Line Activety
+                Intent intent = new Intent(MainActivity.this,CodeIfEalse.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to Boolean Expression
+    private void configureBooleanExpression(){
+        Button nextButton = (Button) findViewById(R.id.goToBooleanExpression);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in IfElse",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Print Line Activety
+                Intent intent = new Intent(MainActivity.this,BooleanExpression.class);
                 startActivity(intent);
             }
         });
