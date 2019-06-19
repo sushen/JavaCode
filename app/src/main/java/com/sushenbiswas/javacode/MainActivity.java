@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         configureBooleanExpression();
         configureLogicalOperator();
         configureNestedIfStatements();
+        configureSwitchStatement();
+        configureBeautifulSwitch();
 
     }
 
@@ -179,6 +181,40 @@ public class MainActivity extends AppCompatActivity {
 
                 // Lonch The Print Line Activety
                 Intent intent = new Intent(MainActivity.this,NastedIf.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to Switch Statements
+    private void configureSwitchStatement(){
+        Button nextButton = (Button) findViewById(R.id.goToSwitchStatement);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Switch Statements",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Print Line Activety
+                Intent intent = new Intent(MainActivity.this,SwitchStatement.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to Beautiful Switch
+    private void configureBeautifulSwitch(){
+        Button nextButton = (Button) findViewById(R.id.goToBeautifulSwitch);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Beautiful Switch",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Print Line Activety
+                Intent intent = new Intent(MainActivity.this,BeautifulSwitch.class);
                 startActivity(intent);
             }
         });
