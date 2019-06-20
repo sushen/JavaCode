@@ -22,7 +22,7 @@
         android:id="@+id/goToHelloWorld"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="3dp"
         android:onClick="configureNextButton"
         android:text="Hello World"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +46,7 @@
         android:id="@+id/goToVariables"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="1dp"
         android:onClick="configureGoToVariables"
         android:text="Variables"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,7 +58,7 @@
         android:id="@+id/goToInteget"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="3dp"
         android:onClick="configureGoToVariables"
         android:text="Intger"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,7 +70,7 @@
         android:id="@+id/goToBoolean"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="1dp"
         android:onClick="configureGoToVariables"
         android:text="Boolean"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,7 +94,7 @@
         android:id="@+id/goToBooleanExpression"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="3dp"
         android:onClick="configureBooleanExpression"
         android:text="Boolean Expression"
         app:layout_constraintEnd_toEndOf="parent"
@@ -118,7 +118,7 @@
         android:id="@+id/goToNestedIfStatements"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="1dp"
         android:onClick="configureNestedIfStatements"
         android:text="Nested If Statement"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,6 +130,7 @@
         android:id="@+id/goToSwitchStatement"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
         android:onClick="configureSwitchStatement"
         android:text="Switch Statement"
         app:layout_constraintEnd_toEndOf="parent"
@@ -148,6 +149,28 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/goToSwitchStatement" />
+
+    <Button
+        android:id="@+id/goToFunction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="configureFunction"
+        android:text="Function"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goToBeautifulSwitch" />
+
+    <Button
+        android:id="@+id/goToVariableParamiter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="configureVariableParamiter"
+        android:text="Variable Paramiter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goToFunction" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         configureNestedIfStatements();
         configureSwitchStatement();
         configureBeautifulSwitch();
+        configureFunction();
+        configureVariableParamiter();
 
     }
 
@@ -215,6 +217,40 @@ public class MainActivity extends AppCompatActivity {
 
                 // Lonch The Print Line Activety
                 Intent intent = new Intent(MainActivity.this,BeautifulSwitch.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to Function
+    private void configureFunction(){
+        Button nextButton = (Button) findViewById(R.id.goToFunction);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Function",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Print Line Activety
+                Intent intent = new Intent(MainActivity.this,ActivityFunction.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to Variable Paramiter
+    private void configureVariableParamiter(){
+        Button nextButton = (Button) findViewById(R.id.goToVariableParamiter);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Function",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Print Line Activety
+                Intent intent = new Intent(MainActivity.this,ActivityVariableParimiter.class);
                 startActivity(intent);
             }
         });
