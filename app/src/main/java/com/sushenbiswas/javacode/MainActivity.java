@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         configureBeautifulSwitch();
         configureFunction();
         configureVariableParamiter();
+        configureSxrolling();
 
     }
 
@@ -251,6 +252,23 @@ public class MainActivity extends AppCompatActivity {
 
                 // Lonch The Print Line Activety
                 Intent intent = new Intent(MainActivity.this,ActivityVariableParimiter.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to Next page
+    private void configureSxrolling(){
+        Button nextButton = (Button) findViewById(R.id.goToScrolling);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Scrolling Page",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Print Line Activety
+                Intent intent = new Intent(MainActivity.this,ScrollingActivity.class);
                 startActivity(intent);
             }
         });
