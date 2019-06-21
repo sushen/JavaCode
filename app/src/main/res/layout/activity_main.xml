@@ -15,14 +15,13 @@
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="8dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <Button
         android:id="@+id/goToHelloWorld"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="2dp"
         android:onClick="configureNextButton"
         android:text="Hello World"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,93 +31,85 @@
 
     <Button
         android:id="@+id/goToPrintLine"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="2dp"
         android:onClick="configureGoToPrintLine"
         android:text="Print Line"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/goToHelloWorld" />
 
     <Button
         android:id="@+id/goToVariables"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="3dp"
         android:onClick="configureGoToVariables"
         android:text="Variables"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/goToPrintLine" />
 
     <Button
         android:id="@+id/goToInteget"
-        android:layout_width="0dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:onClick="configureGoToVariables"
         android:text="Intger"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/goToVariables" />
 
     <Button
         android:id="@+id/goToBoolean"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="2dp"
         android:onClick="configureGoToVariables"
         android:text="Boolean"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/goToInteget" />
 
     <Button
         android:id="@+id/goToIfElse"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="3dp"
         android:onClick="configureGoToIfElse"
         android:text="If Else"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/goToBoolean" />
 
     <Button
         android:id="@+id/goToBooleanExpression"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="2dp"
         android:onClick="configureBooleanExpression"
         android:text="Boolean Expression"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/goToIfElse" />
 
     <Button
         android:id="@+id/goToLogicalOperator"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="2dp"
         android:onClick="configureLogicalOperator"
         android:text="Logical Operator"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/goToBooleanExpression" />
 
     <Button
         android:id="@+id/goToNestedIfStatements"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="41dp"
-        android:layout_marginTop="3dp"
         android:onClick="configureNestedIfStatements"
         android:text="Nested If Statement"
         app:layout_constraintEnd_toEndOf="parent"
@@ -128,9 +119,8 @@
 
     <Button
         android:id="@+id/goToSwitchStatement"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="2dp"
         android:onClick="configureSwitchStatement"
         android:text="Switch Statement"
         app:layout_constraintEnd_toEndOf="parent"
@@ -140,9 +130,8 @@
 
     <Button
         android:id="@+id/goToBeautifulSwitch"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="2dp"
         android:onClick="configureBeautifulSwitch"
         android:text="Beautiful Switch"
         app:layout_constraintEnd_toEndOf="parent"
@@ -152,9 +141,8 @@
 
     <Button
         android:id="@+id/goToFunction"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="3dp"
         android:onClick="configureFunction"
         android:text="Function"
         app:layout_constraintEnd_toEndOf="parent"
@@ -164,9 +152,8 @@
 
     <Button
         android:id="@+id/goToVariableParamiter"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="2dp"
         android:onClick="configureVariableParamiter"
         android:text="Variable Paramiter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -176,9 +163,8 @@
 
     <Button
         android:id="@+id/goToScrolling"
-        android:layout_width="0dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:onClick="configureSxrolling"
         android:text="Next"
         app:layout_constraintEnd_toEndOf="parent"
