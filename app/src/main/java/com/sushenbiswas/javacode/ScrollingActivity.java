@@ -35,6 +35,7 @@ public class ScrollingActivity extends AppCompatActivity {
         configureFunction();
         configureVariableAsArgument();
         configureMultipleParamiter();
+        configureReturnValue();
 
     }
     // this for Button to go main Activety
@@ -129,7 +130,7 @@ public class ScrollingActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.i("MyApps","I am happy");
-                Toast.makeText(getApplicationContext(),"I am in Scrolling Page",Toast.LENGTH_SHORT)
+                Toast.makeText(getApplicationContext(),"I am in Variable As Argument",Toast.LENGTH_SHORT)
                         .show();
 
                 // Lonch The Print Line Activety
@@ -146,11 +147,28 @@ public class ScrollingActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.i("MyApps","I am happy");
-                Toast.makeText(getApplicationContext(),"I am in Scrolling Page",Toast.LENGTH_SHORT)
+                Toast.makeText(getApplicationContext(),"I am in Multiple Paramiter",Toast.LENGTH_SHORT)
                         .show();
 
                 // Lonch The Multiple Parimiter Activety
                 Intent intent = new Intent(ScrollingActivity.this,MultipleParamiter.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to Return Value
+    private void configureReturnValue(){
+        Button nextButton = (Button) findViewById(R.id.goReturnValue);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Return Value",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Multiple Parimiter Activety
+                Intent intent = new Intent(ScrollingActivity.this,ReturnValue.class);
                 startActivity(intent);
             }
         });

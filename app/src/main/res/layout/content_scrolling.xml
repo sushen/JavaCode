@@ -68,7 +68,7 @@
 
         <Button
             android:id="@+id/goVariableAsArgument"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="40dp"
             android:onClick="configureVariableAsArgument"
             android:text="Variable as Argument"
@@ -79,7 +79,7 @@
 
         <Button
             android:id="@+id/goMultipleParamiter"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="40dp"
             android:onClick="configureMultipleParamiter"
             android:text="Multiple Paramiter"
@@ -87,6 +87,17 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/goVariableAsArgument" />
+
+        <Button
+            android:id="@+id/goReturnValue"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:onClick="configureReturnValue"
+            android:text="Return Value Function"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/goMultipleParamiter" />
 
         <Button
             android:id="@+id/goToMainBtn"
@@ -100,7 +111,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/goMultipleParamiter"
+            app:layout_constraintTop_toBottomOf="@+id/goReturnValue"
             app:layout_constraintVertical_bias="0.0" />
 
 

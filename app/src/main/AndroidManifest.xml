@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MultipleParamiter"></activity>
+        <activity android:name=".ReturnValue"></activity>
+        <activity android:name=".MultipleParamiter" />
         <activity android:name=".VariableAsArgument" />
         <activity
             android:name=".ScrollingActivity"
