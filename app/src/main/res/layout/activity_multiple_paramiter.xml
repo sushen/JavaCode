@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Variable Paramiter"
+            android:text="Multiple Paramiter"
             android:textAllCaps="true"
             android:textSize="34sp"
             android:textAlignment="center"/>
