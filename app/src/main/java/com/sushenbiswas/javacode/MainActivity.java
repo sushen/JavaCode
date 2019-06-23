@@ -23,11 +23,6 @@ public class MainActivity extends AppCompatActivity {
         configureGoToIfElse();
         configureBooleanExpression();
         configureLogicalOperator();
-        configureNestedIfStatements();
-        configureSwitchStatement();
-        configureBeautifulSwitch();
-        configureFunction();
-        configureVariableParamiter();
         configureSxrolling();
 
     }
@@ -171,91 +166,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    // This is for Go to Nasted If Statements
-    private void configureNestedIfStatements(){
-        Button nextButton = (Button) findViewById(R.id.goToNestedIfStatements);
-        nextButton.setOnClickListener( new View.OnClickListener() {
 
-            @Override
-            public void onClick(View view) {
-                Log.i("MyApps","I am happy");
-                Toast.makeText(getApplicationContext(),"I am in Nasted If Statements",Toast.LENGTH_SHORT)
-                        .show();
-
-                // Lonch The Print Line Activety
-                Intent intent = new Intent(MainActivity.this,NastedIf.class);
-                startActivity(intent);
-            }
-        });
-    }
-    // This is for Go to Switch Statements
-    private void configureSwitchStatement(){
-        Button nextButton = (Button) findViewById(R.id.goToSwitchStatement);
-        nextButton.setOnClickListener( new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                Log.i("MyApps","I am happy");
-                Toast.makeText(getApplicationContext(),"I am in Switch Statements",Toast.LENGTH_SHORT)
-                        .show();
-
-                // Lonch The Print Line Activety
-                Intent intent = new Intent(MainActivity.this,SwitchStatement.class);
-                startActivity(intent);
-            }
-        });
-    }
-    // This is for Go to Beautiful Switch
-    private void configureBeautifulSwitch(){
-        Button nextButton = (Button) findViewById(R.id.goToBeautifulSwitch);
-        nextButton.setOnClickListener( new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                Log.i("MyApps","I am happy");
-                Toast.makeText(getApplicationContext(),"I am in Beautiful Switch",Toast.LENGTH_SHORT)
-                        .show();
-
-                // Lonch The Print Line Activety
-                Intent intent = new Intent(MainActivity.this,BeautifulSwitch.class);
-                startActivity(intent);
-            }
-        });
-    }
-    // This is for Go to Function
-    private void configureFunction(){
-        Button nextButton = (Button) findViewById(R.id.goToFunction);
-        nextButton.setOnClickListener( new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                Log.i("MyApps","I am happy");
-                Toast.makeText(getApplicationContext(),"I am in Function",Toast.LENGTH_SHORT)
-                        .show();
-
-                // Lonch The Print Line Activety
-                Intent intent = new Intent(MainActivity.this,ActivityFunction.class);
-                startActivity(intent);
-            }
-        });
-    }
-    // This is for Go to Variable Paramiter
-    private void configureVariableParamiter(){
-        Button nextButton = (Button) findViewById(R.id.goToVariableParamiter);
-        nextButton.setOnClickListener( new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                Log.i("MyApps","I am happy");
-                Toast.makeText(getApplicationContext(),"I am in Function",Toast.LENGTH_SHORT)
-                        .show();
-
-                // Lonch The Print Line Activety
-                Intent intent = new Intent(MainActivity.this,ActivityVariableParimiter.class);
-                startActivity(intent);
-            }
-        });
-    }
     // This is for Go to Next page
     private void configureSxrolling(){
         Button nextButton = (Button) findViewById(R.id.goToScrolling);
