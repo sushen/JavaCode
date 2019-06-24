@@ -19,28 +19,31 @@ public class WhileLoop extends AppCompatActivity {
 
     // this is for Display if Else statement
     public void submitOrder(View view) {
-        display("    // I Defune Return Value function here\n" +
+        display("    // This is for Check Alarm\n" +
+                "    public boolean checkAlarm(){\n" +
+                "        boolean ring = true;\n" +
+                "        if(ring){\n" +
+                "            System.out.println(\"Ringtone Ringing\");\n" +
+                "        }else {\n" +
+                "            System.out.println(\"Set Ring Tone\");\n" +
+                "        }\n" +
+                "        return ring;\n" +
+                "    }\n" +
+                "    // This is beep Function\n" +
+                "    public void beep(){\n" +
+                "        System.out.println(\"Beepiln\");\n" +
+                "    }\n" +
                 "\n" +
-                "    public int rollDisc(){\n" +
-                "        //This will ganerate decimal Value\n" +
-                "        double randomNumber = Math.random();\n" +
-                "\n" +
-                "        //This will Generate a biger value\n" +
-                "        randomNumber = randomNumber *6;\n" +
-                "\n" +
-                "        //This will Genarate Value which is less then 7\n" +
-                "        randomNumber = randomNumber + 1;\n" +
-                "\n" +
-                "        //Custing Random Number\n" +
-                "        int randomNumberInt = (int)randomNumber;\n" +
-                "\n" +
-                "        return randomNumberInt;\n" +
+                "    // Alarm  function Wirh While loop\n" +
+                "    public void alarm(){\n" +
+                "        boolean on = checkAlarm();\n" +
+                "        if (on){\n" +
+                "            beep();\n" +
+                "            on = checkAlarm();\n" +
+                "        }\n" +
                 "    }" +
-                "        // I Call The Return Value\n" +
-                "        int firstNumber = rollDisc();\n" +
-                "        int secoundNumber = rollDisc();\n" +
-                "        System.out.println(\"First \"+ firstNumber);\n" +
-                "        System.out.println(\"Secound \"+ secoundNumber);");
+                "        // I Call The Alarm Function\n" +
+                "        alarm();");
 
         // I Call The Alarm Function
         alarm();

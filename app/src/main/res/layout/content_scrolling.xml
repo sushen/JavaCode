@@ -134,6 +134,28 @@
             app:layout_constraintTop_toBottomOf="@+id/goRandomNumber" />
 
         <Button
+            android:id="@+id/goNormalWhile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:onClick="configureNormalWhile"
+            android:text="Normal While"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/goWhileLoop" />
+
+        <Button
+            android:id="@+id/goNotEquealWhile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:onClick="configureNotEquealWhile"
+            android:text="Not equeal While"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/goNormalWhile" />
+
+        <Button
             android:id="@+id/goToMainBtn"
             android:layout_width="match_parent"
             android:layout_height="80dp"
@@ -145,7 +167,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/goWhileLoop"
+            app:layout_constraintTop_toBottomOf="@+id/goNotEquealWhile"
             app:layout_constraintVertical_bias="0.0" />
 
 

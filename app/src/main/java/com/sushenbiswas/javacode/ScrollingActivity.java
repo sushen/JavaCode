@@ -39,6 +39,8 @@ public class ScrollingActivity extends AppCompatActivity {
         configureReturnValueInt();
         configureRandomNumbert();
         configureWhileLoop();
+        configureNormalWhile();
+        configureNotEquealWhile();
 
 
     }
@@ -224,6 +226,40 @@ public class ScrollingActivity extends AppCompatActivity {
 
                 // Lonch The Multiple Parimiter Activety
                 Intent intent = new Intent(ScrollingActivity.this,WhileLoop.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to Normal While
+    private void configureNormalWhile(){
+        Button nextButton = (Button) findViewById(R.id.goNormalWhile);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Normal While",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Multiple Parimiter Activety
+                Intent intent = new Intent(ScrollingActivity.this,NormalWhile.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to Not Equeal While
+    private void configureNotEquealWhile(){
+        Button nextButton = (Button) findViewById(R.id.goNotEquealWhile);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Not Equeal While",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Multiple Parimiter Activety
+                Intent intent = new Intent(ScrollingActivity.this,NotEquealWhile.class);
                 startActivity(intent);
             }
         });
