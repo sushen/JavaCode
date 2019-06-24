@@ -36,6 +36,10 @@ public class ScrollingActivity extends AppCompatActivity {
         configureVariableAsArgument();
         configureMultipleParamiter();
         configureReturnValue();
+        configureReturnValueInt();
+        configureRandomNumbert();
+        configureWhileLoop();
+
 
     }
     // this for Button to go main Activety
@@ -173,4 +177,56 @@ public class ScrollingActivity extends AppCompatActivity {
             }
         });
     }
+    // This is for Go to Number Return Value
+    private void configureReturnValueInt(){
+        Button nextButton = (Button) findViewById(R.id.goReturnValueInt);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Number Return Value",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Multiple Parimiter Activety
+                Intent intent = new Intent(ScrollingActivity.this,ReturnValueInt.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to Number Return Value
+    private void configureRandomNumbert(){
+        Button nextButton = (Button) findViewById(R.id.goRandomNumber);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Random Number",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Multiple Parimiter Activety
+                Intent intent = new Intent(ScrollingActivity.this,RandomNumber.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to While Loop
+    private void configureWhileLoop(){
+        Button nextButton = (Button) findViewById(R.id.goWhileLoop);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in While Loop",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Multiple Parimiter Activety
+                Intent intent = new Intent(ScrollingActivity.this,WhileLoop.class);
+                startActivity(intent);
+            }
+        });
+    }
+
 }

@@ -30,7 +30,7 @@
             android:id="@+id/goToNestedIfStatements"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="4dp"
             android:onClick="configureNestedIfStatements"
             android:text="Nested If Statement"
             app:layout_constraintTop_toBottomOf="@+id/logo"
@@ -100,6 +100,40 @@
             app:layout_constraintTop_toBottomOf="@+id/goMultipleParamiter" />
 
         <Button
+            android:id="@+id/goReturnValueInt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:onClick="configureReturnValueInt"
+            android:text="Number Return Value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/goReturnValue" />
+
+
+        <Button
+            android:id="@+id/goRandomNumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:onClick="configureRandomNumbert"
+            android:text="Random Number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/goReturnValueInt" />
+
+        <Button
+            android:id="@+id/goWhileLoop"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:onClick="configureWhileLoop"
+            android:text="While Loop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/goRandomNumber" />
+
+        <Button
             android:id="@+id/goToMainBtn"
             android:layout_width="match_parent"
             android:layout_height="80dp"
@@ -111,7 +145,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/goReturnValue"
+            app:layout_constraintTop_toBottomOf="@+id/goWhileLoop"
             app:layout_constraintVertical_bias="0.0" />
 
 

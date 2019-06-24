@@ -37,7 +37,6 @@ public class ReturnValue extends AppCompatActivity {
         String MamunHight = admission(122);
         System.out.println(MamunHight);
 
-
     }
 
     // I Defune Return Value function here
@@ -50,7 +49,6 @@ public class ReturnValue extends AppCompatActivity {
         }
         return passText;
     }
-
 
     private void display(String text) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
