@@ -7,12 +7,12 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Arrays extends AppCompatActivity {
+public class RandomResultArrays extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_arrays);
+        setContentView(R.layout.activity_random_result_arrays);
 
         goToMain();
     }
@@ -25,13 +25,20 @@ public class Arrays extends AppCompatActivity {
                 "        // This Single line is the example of Arrays\n" +
                 "        String [] newsOutlet = {\"abc\",\"bbc\",\"CNN\",\"CBS\",\"AP\",\"NBA\",\"FOX\",\"npr\",\"sky\",\"Aljazeera\"};\n" +
                 "\n" +
+                "        //Using Math.random Function to make a randon decimal Number\n" +
+                "        double lucky = Math.random();\n" +
+                "        //this will make a decimal number betwin 1 to 10\n" +
+                "        lucky *= 10;\n" +
+                "        // this will cust the decimal number to a intiger\n" +
+                "        int luckyIndex = (int) lucky;\n" +
+                "\n" +
                 "        //This line is for Output Log here I call newsOutlet[0]\n" +
-                "        System.out.println(newsOutlet[1]);\n" +
+                "        System.out.println(newsOutlet[luckyIndex]);\n" +
                 "    }" +
-                "        // Call Array Functioon\n" +
+                "        // Call Array Functioon and this is beautiful\n" +
                 "        arrayFunctionExample();");
 
-        // Call Array Functioon
+        // Call Array Functioon and this is beautiful
         arrayFunctionExample();
 
     }
@@ -44,8 +51,15 @@ public class Arrays extends AppCompatActivity {
         // This Single line is the example of Arrays
         String [] newsOutlet = {"abc","bbc","CNN","CBS","AP","NBA","FOX","npr","sky","Aljazeera"};
 
+        //Using Math.random Function to make a randon decimal Number
+        double lucky = Math.random();
+        //this will make a decimal number betwin 1 to 10
+        lucky *= 10;
+        // this will cust the decimal number to a intiger
+        int luckyIndex = (int) lucky;
+
         //This line is for Output Log here I call newsOutlet[0]
-        System.out.println(newsOutlet[1]);
+        System.out.println(newsOutlet[luckyIndex]);
     }
 
     // This is for Desplaying after Clicking Btn

@@ -44,25 +44,8 @@ public class ScrollingActivity extends AppCompatActivity {
         configureWhileForThreeDice();
         configuregoToActivety3();
 
-
     }
-    // This is for Go to Next page
-    private void configuregoToActivety3(){
-        Button nextButton = (Button) findViewById(R.id.goToActivety3);
-        nextButton.setOnClickListener( new View.OnClickListener() {
 
-            @Override
-            public void onClick(View view) {
-                Log.i("MyApps","I am happy");
-                Toast.makeText(getApplicationContext(),"I am in Activety 3",Toast.LENGTH_SHORT)
-                        .show();
-
-                // Lonch The Print Line Activety
-                Intent intent = new Intent(ScrollingActivity.this,Main3Activity.class);
-                startActivity(intent);
-            }
-        });
-    }
     // this for Button to go main Activety
     private void goToMain() {
         Button btn = (Button) findViewById(R.id.goToMainBtn);
@@ -296,6 +279,27 @@ public class ScrollingActivity extends AppCompatActivity {
 
                 // Lonch The Multiple Parimiter Activety
                 Intent intent = new Intent(ScrollingActivity.this,WhileForThreeDise.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+
+
+
+    // This is for Go to Next page
+    private void configuregoToActivety3(){
+        Button nextButton = (Button) findViewById(R.id.goToActivety3);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Scrolling Page",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Print Line Activety
+                Intent intent = new Intent(ScrollingActivity.this,Main3Activity.class);
                 startActivity(intent);
             }
         });

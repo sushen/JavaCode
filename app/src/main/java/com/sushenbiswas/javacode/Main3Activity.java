@@ -25,7 +25,8 @@ public class Main3Activity extends AppCompatActivity {
         configurePyramidBlockCount();
         configureDecrimentalLoop();
         configureBreak();
-        configureArrays();
+        configuregoToActivety4();
+
     }
 
     // this for Button to go main Activety
@@ -39,9 +40,26 @@ public class Main3Activity extends AppCompatActivity {
                         .show();
             }
         });
-
-
     }
+
+    // This is for Go to Next page
+    private void configuregoToActivety4(){
+        Button nextButton = (Button) findViewById(R.id.goToActivety4);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Activety 3",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Print Line Activety
+                Intent intent = new Intent(Main3Activity.this,Main4Activity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
     // This is for Go to Logical Operator
     private void configureInfiniteLoop() {
         Button nextButton = (Button) findViewById(R.id.goInfiniteLoop);
@@ -192,6 +210,57 @@ public class Main3Activity extends AppCompatActivity {
 
                 // Lonch The Multiple Parimiter Activety
                 Intent intent = new Intent(Main3Activity.this,Arrays.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to Random Result Using Arrays
+    private void configureRandomResultArrays(){
+        Button nextButton = (Button) findViewById(R.id.goRandomResultArrays);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Result Using Arrays",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Multiple Parimiter Activety
+                Intent intent = new Intent(Main3Activity.this,RandomResultArrays.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to Arrays and Loop
+    private void configureArraysAndLoop(){
+        Button nextButton = (Button) findViewById(R.id.goArraysAndLoop);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Arrays and Loop",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Multiple Parimiter Activety
+                Intent intent = new Intent(Main3Activity.this,ArraysAndLoop.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to Arrays Bound
+    private void configureArrayBound(){
+        Button nextButton = (Button) findViewById(R.id.goArrayBound);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Arrays Bound",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Multiple Parimiter Activety
+                Intent intent = new Intent(Main3Activity.this,ArrayBound.class);
                 startActivity(intent);
             }
         });
