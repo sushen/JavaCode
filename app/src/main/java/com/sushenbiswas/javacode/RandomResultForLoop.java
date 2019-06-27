@@ -7,21 +7,21 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class NotEquealWhile extends AppCompatActivity {
+public class RandomResultForLoop extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_not_equeal_while);
+        setContentView(R.layout.activity_random_result_for_loop);
 
         goToMain();
     }
 
     // this is for Display if Else statement
     public void submitOrder(View view) {
-        display("  // I Defune Return Value function here\n" +
+        display("  // I Defune Randomresult function here\n" +
                 "\n" +
-                "    public int rollDisc(){\n" +
+                "    public int randomResult(){\n" +
                 "        //This will ganerate decimal Value\n" +
                 "        double randomNumber = Math.random();\n" +
                 "\n" +
@@ -36,32 +36,23 @@ public class NotEquealWhile extends AppCompatActivity {
                 "\n" +
                 "        return randomNumberInt;\n" +
                 "    }\n" +
-                "    // This is Not Equeal While loop\n" +
-                "    public int keepRolling(){\n" +
-                "        int disc1 = rollDisc();\n" +
-                "        int disc2 = rollDisc();\n" +
-                "        int count = 1;\n" +
-                "\n" +
-                "        while (!(disc1 == disc2)){\n" +
-                "            disc1 = rollDisc();\n" +
-                "            disc2 = rollDisc();\n" +
-                "            count = count +1;\n" +
-                "            System.out.println(count);\n" +
+                "    // This is Loop Counter\n" +
+                "    public void raiseAlarm(int numberOfWorning){\n" +
+                "        for (int i = 1; i <= numberOfWorning; i++){\n" +
+                "            System.out.println(\"Warning! \" +( randomResult() + i));\n" +
                 "        }\n" +
-                "        return count;\n" +
                 "    }" +
-                "" +
-                "        // Call Not Equeal While loop\n" +
-                "        keepRolling();\n");
+                "        // Call Loop Counter\n" +
+                "        raiseAlarm(5);");
 
-        // Call Not Equeal While loop
-        keepRolling();
+        // Call Loop Counter
+        raiseAlarm(5);
 
     }
 
-    // I Defune Return Value function here
+    // I Defune Randomresult function here
 
-    public int rollDisc(){
+    public int randomResult(){
         //This will ganerate decimal Value
         double randomNumber = Math.random();
 
@@ -76,19 +67,11 @@ public class NotEquealWhile extends AppCompatActivity {
 
         return randomNumberInt;
     }
-    // This is Not Equeal While loop
-    public int keepRolling(){
-        int disc1 = rollDisc();
-        int disc2 = rollDisc();
-        int count = 1;
-
-        while (!(disc1 == disc2)){
-            disc1 = rollDisc();
-            disc2 = rollDisc();
-            count = count +1;
-            System.out.println(count);
+    // This is Loop Counter
+    public void raiseAlarm(int numberOfWorning){
+        for (int i = 1; i <= numberOfWorning; i++){
+            System.out.println("Warning! " +( randomResult() + i));
         }
-        return count;
     }
 
 

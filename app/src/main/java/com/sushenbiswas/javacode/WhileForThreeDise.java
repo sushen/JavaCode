@@ -7,12 +7,12 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class NotEquealWhile extends AppCompatActivity {
+public class WhileForThreeDise extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_not_equeal_while);
+        setContentView(R.layout.activity_while_for_three_dise);
 
         goToMain();
     }
@@ -36,21 +36,22 @@ public class NotEquealWhile extends AppCompatActivity {
                 "\n" +
                 "        return randomNumberInt;\n" +
                 "    }\n" +
-                "    // This is Not Equeal While loop\n" +
-                "    public int keepRolling(){\n" +
-                "        int disc1 = rollDisc();\n" +
-                "        int disc2 = rollDisc();\n" +
-                "        int count = 1;\n" +
-                "\n" +
-                "        while (!(disc1 == disc2)){\n" +
-                "            disc1 = rollDisc();\n" +
-                "            disc2 = rollDisc();\n" +
-                "            count = count +1;\n" +
-                "            System.out.println(count);\n" +
-                "        }\n" +
-                "        return count;\n" +
-                "    }" +
-                "" +
+                "    // This is While loop for three Dise\n" +
+                        "    public int keepRolling(){\n" +
+                        "        int disc1 = rollDisc();\n" +
+                        "        int disc2 = rollDisc();\n" +
+                        "        int disc3 = rollDisc();\n" +
+                        "        int count = 1;\n" +
+                        "\n" +
+                        "        while (!(disc1 == disc2 && disc2 == disc3)){\n" +
+                        "            disc1 = rollDisc();\n" +
+                        "            disc2 = rollDisc();\n" +
+                        "            count = count +1;\n" +
+                        "            System.out.println(count);\n" +
+                        "        }\n" +
+                        "        return count;\n" +
+                        "    }"+
+
                 "        // Call Not Equeal While loop\n" +
                 "        keepRolling();\n");
 
@@ -76,13 +77,14 @@ public class NotEquealWhile extends AppCompatActivity {
 
         return randomNumberInt;
     }
-    // This is Not Equeal While loop
+    // This is While loop for three Dise
     public int keepRolling(){
         int disc1 = rollDisc();
         int disc2 = rollDisc();
+        int disc3 = rollDisc();
         int count = 1;
 
-        while (!(disc1 == disc2)){
+        while (!(disc1 == disc2 && disc2 == disc3)){
             disc1 = rollDisc();
             disc2 = rollDisc();
             count = count +1;
@@ -114,3 +116,4 @@ public class NotEquealWhile extends AppCompatActivity {
 
     }
 }
+

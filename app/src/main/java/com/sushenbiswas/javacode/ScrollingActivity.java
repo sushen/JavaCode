@@ -41,8 +41,27 @@ public class ScrollingActivity extends AppCompatActivity {
         configureWhileLoop();
         configureNormalWhile();
         configureNotEquealWhile();
+        configureWhileForThreeDice();
+        configuregoToActivety3();
 
 
+    }
+    // This is for Go to Next page
+    private void configuregoToActivety3(){
+        Button nextButton = (Button) findViewById(R.id.goToActivety3);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Activety 3",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Print Line Activety
+                Intent intent = new Intent(ScrollingActivity.this,Main3Activity.class);
+                startActivity(intent);
+            }
+        });
     }
     // this for Button to go main Activety
     private void goToMain() {
@@ -264,5 +283,23 @@ public class ScrollingActivity extends AppCompatActivity {
             }
         });
     }
+    // This is for Go to While For Three Dice
+    private void configureWhileForThreeDice(){
+        Button nextButton = (Button) findViewById(R.id.goWhileForThreeDice);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in While For Three Dicee",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Multiple Parimiter Activety
+                Intent intent = new Intent(ScrollingActivity.this,WhileForThreeDise.class);
+                startActivity(intent);
+            }
+        });
+    }
+
 
 }

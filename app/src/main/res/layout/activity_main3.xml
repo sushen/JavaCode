@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="casual"
+        android:text="Learn Java With Biswas"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="1dp" />
+    <Button
+        android:id="@+id/goIncrementalWhile"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="configureIncrementalWhile"
+        android:text="Incremental While"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <Button
+        android:id="@+id/goIncrementalForLoop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="configureIncrementalForLoop"
+        android:text="Incremental For Loop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goIncrementalWhile" />
+
+    <Button
+        android:id="@+id/goLoopCounter"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="configureLoopCounter"
+        android:text="Loop Counter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goIncrementalForLoop" />
+
+
+    <Button
+        android:id="@+id/goRandomResultForLoop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="configureRandomResultForLoop"
+        android:text="Random Result For Loop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goLoopCounter" />
+
+    <Button
+        android:id="@+id/goInfiniteLoop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="configureInfiniteLoop"
+        android:text="Infinite Loop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goRandomResultForLoop" />
+
+
+    <Button
+        android:id="@+id/goPyramidBlockCount"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="configurePyramidBlockCount"
+        android:text="Pyramid Block Count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goInfiniteLoop" />
+
+    <Button
+        android:id="@+id/goDecrimentalLoop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="configureDecrimentalLoop"
+        android:text="Decrimental Loop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goPyramidBlockCount" />
+
+    <Button
+        android:id="@+id/goBreak"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="configureBreak"
+        android:text="Break"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goDecrimentalLoop" />
+
+    <Button
+        android:id="@+id/goArrays"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="configureArrays"
+        android:text="Arrays"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goBreak" />
+
+    <Button
+        android:id="@+id/goToActivety3"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:onClick="configuregoToActivety3"
+        android:text="Next"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/goArrays"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/goToMainBtn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:onClick="goToMain"
+        android:textSize="20sp"
+        android:text="Go to main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goToActivety3"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
