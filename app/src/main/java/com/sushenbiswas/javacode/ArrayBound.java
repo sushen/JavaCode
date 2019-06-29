@@ -36,7 +36,7 @@ public class ArrayBound extends AppCompatActivity {
                 "        calcluteAverage(tempratureInput);");
 
         // Call Array Functioon and Calcluting Average
-        double [] tempratureInput = {75,78,66,66};
+        double [] tempratureInput = {75,78,66,66,75,78,66,66,75,78,66,66};
         calcluteAverage(tempratureInput);
     }
 
@@ -44,14 +44,15 @@ public class ArrayBound extends AppCompatActivity {
 
     // This is Arrays fo Calcluting Average
     public void calcluteAverage(double [] temprature){
+        //This is the example of Array bound
         int size = temprature.length;
-        double total = 0;
-        for (int i = 0; i < size; i++){
-            total += temprature[i];
+        if(10 < size){
+            System.out.println(temprature[10]);
         }
-        double average = total/size;
-        System.out.println(average);
-        return ;
+        // Bound Example is in line 48 to line 51
+        else {
+            System.out.println("Input is too small.");
+        }
 
     }
 

@@ -22,6 +22,9 @@ public class Main4Activity extends AppCompatActivity {
         configureArraysAndLoop();
         configureArrayBound();
         configuregoToActivety5();
+        configureStringLoopArrays();
+        configureEquealTo();
+        configure2Darrays();
     }
 
     // this for Button to go main Activety
@@ -106,6 +109,23 @@ public class Main4Activity extends AppCompatActivity {
             }
         });
     }
+    // This is for Go to String Loop Arrays
+    private void configureStringLoopArrays(){
+        Button nextButton = (Button) findViewById(R.id.goStringLoopArrays);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in String Loop Arrays",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Multiple Parimiter Activety
+                Intent intent = new Intent(Main4Activity.this,StringLoopArray.class);
+                startActivity(intent);
+            }
+        });
+    }
     // This is for Go to Arrays Bound
     private void configureArrayBound(){
         Button nextButton = (Button) findViewById(R.id.goArrayBound);
@@ -119,6 +139,41 @@ public class Main4Activity extends AppCompatActivity {
 
                 // Lonch The Multiple Parimiter Activety
                 Intent intent = new Intent(Main4Activity.this,ArrayBound.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is for Go to Use <, > or <=, >=
+    private void configureEquealTo(){
+        Button nextButton = (Button) findViewById(R.id.goEquealTo);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Use <, > or <=, >=",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Multiple Parimiter Activety
+                Intent intent = new Intent(Main4Activity.this,LessAndGreterEquealOrLessAndGreater.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    // This is  2D Array
+    private void configure2Darrays(){
+        Button nextButton = (Button) findViewById(R.id.go2Darrays);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in 2D Array",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Multiple Parimiter Activety
+                Intent intent = new Intent(Main4Activity.this,twoDarray.class);
                 startActivity(intent);
             }
         });

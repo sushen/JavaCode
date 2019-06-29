@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Main4Activity"></activity>
+        <activity android:name=".twoDarray"></activity>
+        <activity android:name=".LessAndGreterEquealOrLessAndGreater" />
+        <activity android:name=".StringLoopArray" />
+        <activity android:name=".Main4Activity" />
         <activity android:name=".ArrayBound" />
         <activity android:name=".ArraysAndLoop" />
         <activity android:name=".RandomResultArrays" />
