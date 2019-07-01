@@ -19,11 +19,25 @@ public class twoDarray extends AppCompatActivity {
 
     // this is for Display if Else statement
     public void submitOrder(View view) {
-        display("");
+        display("  // Call 2d Array Function\n" +
+                "        int studentGread [][] = {{45,42,97,54,56},{44,45,94,53,57},{45,46,67,54,56},{44,45,94,59,57},{45,46,87,54,56}};\n" +
+                "        studentAverage(studentGread,5);\n" +
+                "\n" +
+                "    }\n" +
+                "    // This is 2d Array\n" +
+                "    public static double studentAverage(int [][] grage, int student){\n" +
+                "        int total = 0;\n" +
+                "        int subject = grage.length;\n" +
+                "        for (int i =0; i<subject; i++){\n" +
+                "         total+=grage[i][student];\n" +
+                "        }\n" +
+                "        double average = total/(double)subject;\n" +
+                "        return average;\n" +
+                "    }\n");
 
-    // Call 2d Array Function
-        int studentGread [][] = {{45,42,97,54,56},{44,45,94,53,57},{45,46,67,54,56},{44,45,94,59,57},{45,46,87,54,56}};
-        studentAverage(studentGread,5);
+//    // Call 2d Array Function
+//        int studentGread [][] = {{45,42,97,54,56},{44,45,94,53,57},{45,46,67,54,56},{44,45,94,59,57},{45,46,87,54,56}};
+//        studentAverage(studentGread,5);
 
     }
     // This is 2d Array

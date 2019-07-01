@@ -25,6 +25,8 @@ public class Main4Activity extends AppCompatActivity {
         configureStringLoopArrays();
         configureEquealTo();
         configure2Darrays();
+        configureNestedLoops();
+        configureNestedLoopsWith2dArrays();
     }
 
     // this for Button to go main Activety
@@ -174,6 +176,40 @@ public class Main4Activity extends AppCompatActivity {
 
                 // Lonch The Multiple Parimiter Activety
                 Intent intent = new Intent(Main4Activity.this,twoDarray.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is  Nested Loops
+    private void configureNestedLoops(){
+        Button nextButton = (Button) findViewById(R.id.goNestedLoops);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Nested Loops",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Multiple Parimiter Activety
+                Intent intent = new Intent(Main4Activity.this,NestedLoopWith2dArrays.class);
+                startActivity(intent);
+            }
+        });
+    }
+    // This is  Nested Loops With 2d Arrays
+    private void configureNestedLoopsWith2dArrays(){
+        Button nextButton = (Button) findViewById(R.id.goNestedLoopsWith2dArrays);
+        nextButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.i("MyApps","I am happy");
+                Toast.makeText(getApplicationContext(),"I am in Nested Loops With 2d Arrays",Toast.LENGTH_SHORT)
+                        .show();
+
+                // Lonch The Multiple Parimiter Activety
+                Intent intent = new Intent(Main4Activity.this,NestedLoopWith2dArrays.class);
                 startActivity(intent);
             }
         });

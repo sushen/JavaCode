@@ -97,6 +97,27 @@
         app:layout_constraintTop_toBottomOf="@+id/goStringLoopArrays" />
 
     <Button
+        android:id="@+id/goNestedLoops"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="configureNestedLoops"
+        android:text="Nested Loops"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/go2Darrays" />
+    <Button
+        android:id="@+id/goNestedLoopsWith2dArrays"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="configureNestedLoopsWith2dArrays"
+        android:text="Nested Loops With 2d Arrays"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goNestedLoops" />
+
+    <Button
         android:id="@+id/goToActivety5"
         android:layout_width="match_parent"
         android:layout_height="44dp"
@@ -104,7 +125,7 @@
         android:text="Next"
         android:textSize="20sp"
         android:layout_marginTop="40dp"
-        app:layout_constraintTop_toBottomOf="@+id/goEquealTo"
+        app:layout_constraintTop_toBottomOf="@+id/goNestedLoopsWith2dArrays"
         tools:layout_editor_absoluteX="0dp" />
 
     <Button
